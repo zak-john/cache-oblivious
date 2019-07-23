@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface KTree {
 
-    void init(List subArrays);
+    void init(Buffer[] buffers);
 
     List sort();
 }

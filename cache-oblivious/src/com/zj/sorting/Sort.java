@@ -17,6 +17,12 @@ public enum Sort {
         System.out.println(subArraySize);
         List<List> subArrays = divideInput(input, N, k, subArraySize);
         mergeSortSubArrays(subArrays);
+
+        for(List subarray: subArrays) {
+            subarray = (ArrayList) subarray;
+            int[] array = (Integer[]) subarray.toArray();
+            // make all of this arrays rather than collections.
+        }
         KTree kTree = new KTreeImpl();
         kTree.init(subArrays);
         return kTree.sort();
