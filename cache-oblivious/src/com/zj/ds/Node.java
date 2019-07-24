@@ -76,18 +76,20 @@ public class Node {
             while (!rightChild.isEmpty()) {
                 this.buffer.put(rightChild.nextBufferElement());
             }
+            return;
         }
 
         if (rightChild.isEmpty()) {
             while (!leftChild.isEmpty()) {
                 this.buffer.put(leftChild.nextBufferElement());
             }
+            return;
         }
 
         int nextLeftElement = leftChild.buffer().peep();
         int nextRightElement = rightChild.buffer().peep();
 
-        int newElement = nextLeftElement > nextRightElement ? nextRightElement : nextLeftElement;
+        int newElement = nextLeftElement > nextRightElement ? rightChild.nextBufferElement() : leftChild.nextBufferElement();
 
         this.buffer.put(newElement);
     }

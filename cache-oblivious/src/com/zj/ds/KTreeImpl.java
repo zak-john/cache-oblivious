@@ -17,7 +17,6 @@ public class KTreeImpl implements KTree {
         int baseSize = findNearestPowerOfTwo(numInputBuffers);
         int size = totalSizeOfTree(baseSize);
         this.tree = new Node[size];
-        this.head = tree[tree.length-1];
         for (int i = 0; i < numInputBuffers; i++) {
             tree[i] = new Node(buffers[i]);
         }
@@ -26,11 +25,12 @@ public class KTreeImpl implements KTree {
         }
         int start = 0;
         int end = baseSize;
-        while (start < end) {
+        while (start+1 != end) {
             tree[end] = new Node(tree[start], tree[start+1]);
             end++;
             start += 2;
         }
+        this.head = tree[tree.length-1];
     }
 
     @Override

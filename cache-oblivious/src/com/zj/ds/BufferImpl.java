@@ -8,15 +8,17 @@ public class BufferImpl implements Buffer {
 
     private int[] data;
     private int nextIndex;
-    private int inputIndex = 0;
+    private int inputIndex;
 
     public BufferImpl(int size) {
         this.nextIndex = 0;
+        this.inputIndex = 0;
         this.data = new int[size];
     }
 
     public BufferImpl(int[] input) {
         this.nextIndex = 0;
+        this.inputIndex = input.length;
         this.data = input;
     }
 
@@ -37,7 +39,7 @@ public class BufferImpl implements Buffer {
 
     @Override
     public boolean isEmpty() {
-        return nextIndex == data.length;
+        return nextIndex == inputIndex;
     }
 
     @Override

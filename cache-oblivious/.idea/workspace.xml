@@ -24,8 +24,8 @@
       <file leaf-file-name="Sort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zj/sorting/Sort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="174">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#132#162#0" expanded="true" />
@@ -37,22 +37,22 @@
       <file leaf-file-name="Buffer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zj/ds/Buffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="60">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BufferImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BufferImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/zj/ds/BufferImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+            <state relative-caret-position="148">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="e#145#146#0" expanded="true" />
                 <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
                 <element signature="e#542#543#0" expanded="true" />
                 <element signature="e#571#572#0" expanded="true" />
                 <element signature="e#694#695#0" expanded="true" />
@@ -64,11 +64,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Iterator.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForEachOps.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/stream/ForEachOps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="183" selection-start-line="183" selection-end-line="183" />
+              <folding>
+                <element signature="e#6103#6104#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zj/ds/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+            <state relative-caret-position="370">
+              <caret line="63" column="58" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="64" />
               <folding>
                 <element signature="e#177#178#0" expanded="true" />
                 <element signature="e#210#211#0" expanded="true" />
@@ -100,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KTreeImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KTreeImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zj/ds/KTreeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-219">
-              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+            <state relative-caret-position="112">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -112,8 +133,8 @@
       <file leaf-file-name="FunnelsortTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com.zj/FunnelsortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="203">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,13 +163,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/zj/Sorting/Sort.java" />
         <option value="$PROJECT_DIR$/src/com/zj/sorting/kMerger.java" />
-        <option value="$PROJECT_DIR$/test/com.zj/FunnelsortTest.java" />
         <option value="$PROJECT_DIR$/src/com/zj/ds/Buffer.java" />
-        <option value="$PROJECT_DIR$/src/com/zj/ds/BufferImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/zj/ds/Node.java" />
         <option value="$PROJECT_DIR$/src/com/zj/ds/KTree.java" />
-        <option value="$PROJECT_DIR$/src/com/zj/ds/KTreeImpl.java" />
         <option value="$PROJECT_DIR$/src/com/zj/sorting/Sort.java" />
+        <option value="$PROJECT_DIR$/test/com.zj/FunnelsortTest.java" />
+        <option value="$PROJECT_DIR$/src/com/zj/ds/KTreeImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/zj/ds/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/zj/ds/BufferImpl.java" />
       </list>
     </option>
   </component>
@@ -242,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Sort">
+  <component name="RunManager" selected="JUnit.FunnelsortTest.testSortsInOrder">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.zj.Main" />
       <module name="cache-oblivious" />
@@ -290,8 +311,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Sort" />
         <item itemvalue="JUnit.FunnelsortTest.testSortsInOrder" />
+        <item itemvalue="Application.Sort" />
       </list>
     </recent_temporary>
   </component>
@@ -309,10 +330,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.06.12 at 19h 24m 31s.xml">
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 17m 50s.xml">
       <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.06.12 at 19h 25m 18s.xml">
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 18m 21s.xml">
+      <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 18m 38s.xml">
+      <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 19m 48s.xml">
+      <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 37m 07s.xml">
+      <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 46m 54s.xml">
+      <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 49m 02s.xml">
+      <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 50m 31s.xml">
+      <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 52m 41s.xml">
+      <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FunnelsortTest_testSortsInOrder - 2019.07.24 at 22h 58m 15s.xml">
       <configuration name="FunnelsortTest.testSortsInOrder" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -329,17 +374,17 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22647059" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43529412" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25364667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25364667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.38235295" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38235295" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -353,18 +398,73 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zj/ds/BufferImpl.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zj/ds/Node.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zj/ds/Node.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>Math.pow(N, 2.00/3)</expression-string>
+        <expression-string>leftChild.isNotLeafNode()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Math.pow(N, 1.00/3)</expression-string>
+        <expression-string>leftChild.isEmpty()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>leftChild.isEmpty() &amp;&amp; leftChild.isNotLeafNode()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tree.length-1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>System.out.println(tree[25])</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>System.out.println(tree[251])</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>System.out.println(tree[252])</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>System.out.println(tree[253])</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>System.out.println(tree[254])</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -400,16 +500,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com.zj/FunnelsortTest" />
-    <entry file="file://$PROJECT_DIR$/test/com.zj/FunnelsortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zj/sorting/kMerger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -435,36 +525,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zj/ds/Buffer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zj/ds/KTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zj/ds/BufferImpl.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        <state relative-caret-position="225">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/stream/ForEachOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
           <folding>
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#6103#6104#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com.zj/FunnelsortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zj/sorting/Sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#132#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zj/ds/KTreeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zj/ds/Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zj/ds/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+        <state relative-caret-position="370">
+          <caret line="63" column="58" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="64" />
           <folding>
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#210#211#0" expanded="true" />
@@ -486,28 +609,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zj/ds/KTree.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zj/ds/BufferImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zj/sorting/Sort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="148">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#132#162#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zj/ds/KTreeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
     </entry>
