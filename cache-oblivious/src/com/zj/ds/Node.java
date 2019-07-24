@@ -20,8 +20,8 @@ public class Node {
         this.rightChild = rightChild;
         this.leafNode = false;
 
-        int leftSize  = leftChild .empty() ? 0 : leftChild.bufferSize();
-        int rightSize = rightChild.empty() ? 0 : rightChild.bufferSize();
+        int leftSize  = leftChild .isEmpty() ? 0 : leftChild.bufferSize();
+        int rightSize = rightChild.isEmpty() ? 0 : rightChild.bufferSize();
 
         this.buffer = new BufferImpl(leftSize + rightSize);
 
@@ -47,8 +47,8 @@ public class Node {
         return buffer;
     }
 
-    public boolean empty() {
-        return buffer.empty();
+    public boolean isEmpty() {
+        return buffer.isEmpty();
     }
 
     public boolean full() {
@@ -61,10 +61,10 @@ public class Node {
 
     public void fill() {
         while (!full()) {
-            if (leftChild.empty() && leftChild.isNotLeafNode()) {
+            if (leftChild.isEmpty() && leftChild.isNotLeafNode()) {
                 leftChild.fill();
             }
-            if (rightChild.empty() && rightChild.isNotLeafNode()) {
+            if (rightChild.isEmpty() && rightChild.isNotLeafNode()) {
                 rightChild.fill();
             }
             merge();
@@ -72,7 +72,24 @@ public class Node {
     }
 
     public void merge() {
-        
+        if (leftChild.isEmpty()) {
+            while (!rightChild.isEmpty()) {
+                this.buffer.put(rightChild.nextBufferElement());
+            }
+        }
+
+        if (rightChild.isEmpty()) {
+            while (!leftChild.isEmpty()) {
+                this.buffer.put(leftChild.nextBufferElement());
+            }
+        }
+
+        int nextLeftElement = leftChild.buffer().peep();
+        int nextRightElement = rightChild.buffer().peep();
+
+        int newElement = nextLeftElement > nextRightElement ? nextRightElement : nextLeftElement;
+
+        this.buffer.put(newElement);
     }
 
 }

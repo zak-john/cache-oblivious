@@ -8,6 +8,7 @@ public class BufferImpl implements Buffer {
 
     private int[] data;
     private int nextIndex;
+    private int inputIndex = 0;
 
     public BufferImpl(int size) {
         this.nextIndex = 0;
@@ -35,7 +36,7 @@ public class BufferImpl implements Buffer {
     }
 
     @Override
-    public boolean empty() {
+    public boolean isEmpty() {
         return nextIndex == data.length;
     }
 
@@ -47,5 +48,11 @@ public class BufferImpl implements Buffer {
     @Override
     public int[] array() {
         return data;
+    }
+
+    @Override
+    public void put(int input) {
+        data[inputIndex] = input;
+        inputIndex++;
     }
 }

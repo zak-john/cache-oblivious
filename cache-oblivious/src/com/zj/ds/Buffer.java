@@ -8,9 +8,11 @@ public interface Buffer {
 
     void sort();
 
-    boolean empty();
+    boolean isEmpty();
 
     int size();
 
     int[] array();
+
+    void put(int input);
 }

@@ -1,10 +1,15 @@
 package com.zj.ds;
 
-import java.util.List;
+import java.util.Arrays;
 
 public class KTreeImpl implements KTree {
     private Node[] tree;
     private Node head;
+
+    public KTreeImpl(int[] input) {
+        Buffer[] buffers = createInitialBuffers(input);
+        this.init(buffers);
+    }
 
     @Override
     public void init(Buffer[] buffers) {
@@ -29,8 +34,9 @@ public class KTreeImpl implements KTree {
     }
 
     @Override
-    public List sort() {
-        return null;
+    public int[] sort() {
+        head.fill();
+        return head.buffer().array();
     }
 
     private int findNearestPowerOfTwo(int input) {
@@ -54,5 +60,58 @@ public class KTreeImpl implements KTree {
             total += baseSize;
         }
         return total;
+    }
+
+    private Buffer[] createInitialBuffers(int[] input) {
+        int N = input.length;
+        int k = (int) Math.pow(N, 1.00/3);
+        int subArraySize = N / k;
+        int[][] subArrays = divideInput(input, N, k, subArraySize);
+        mergeSortSubArrays(subArrays);
+        Buffer[] output = new Buffer[k];
+        for (int i = 0; i < subArrays.length; i++) {
+            int[] subArray = subArrays[i];
+            output[i] = new BufferImpl(subArray);
+        }
+        return output;
+    }
+
+    private static void mergeSortSubArrays(int[][] subArrays) {
+        for (int[] subArray: subArrays) {
+            Arrays.sort(subArray);
+        }
+    }
+
+    private static int[][] divideInput(int[] input, int n, int k, int subArraySize) {
+        // To account for rounding errors.
+        int increasedArraySize = subArraySize + k;
+        int[][] subArrays = new int[k][increasedArraySize];
+        int inputPosition = 0;
+        for (int i = 0; i < k; i++) {
+            int[] subArray = subArrays[i];
+            inputPosition = fillSubArray(input, subArraySize, inputPosition, subArray);
+            boolean finalSubArray = i == k-1;
+            if (finalSubArray) {
+                boolean inputRemaining = inputPosition < n;
+                if (inputRemaining) {
+                    addRemainingToFinalSubArray(input, n, inputPosition, subArray, subArraySize);
+                }
+            }
+        }
+        return subArrays;
+    }
+
+    private static int fillSubArray(int[] input, int subArraySize, int inputPosition, int[] subArray) {
+        for (int j = 0; j < subArraySize; j++) {
+            subArray[j] = input[inputPosition++];
+        }
+        return inputPosition;
+    }
+
+    private static void addRemainingToFinalSubArray(int[] input, int n, int inputPosition, int[] subArray, int subArraySize) {
+        int posInSubArray = subArraySize;
+        for (int j = inputPosition; j < n; j++) {
+            subArray[posInSubArray++] = input[j];
+        }
     }
 }
