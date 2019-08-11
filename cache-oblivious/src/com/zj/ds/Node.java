@@ -9,10 +9,12 @@ public class Node {
     private Node leftChild = null;
     private int numElements = 0;
     private boolean leafNode;
+    private int targetSize;
 
     public Node(Buffer buffer) {
         this.buffer = buffer;
         this.leafNode = true;
+        this.targetSize = buffer.size();
     }
 
     public Node(Node leftChild, Node rightChild) {
@@ -20,10 +22,10 @@ public class Node {
         this.rightChild = rightChild;
         this.leafNode = false;
 
-        int leftSize  = leftChild .isEmpty() ? 0 : leftChild.bufferSize();
-        int rightSize = rightChild.isEmpty() ? 0 : rightChild.bufferSize();
+        this.targetSize = this.leftChild.targetSize + this.rightChild.targetSize;
 
-        this.buffer = new BufferImpl(leftSize + rightSize);
+        this.buffer = new BufferImpl(targetSize);
+
 
     }
 
@@ -52,7 +54,7 @@ public class Node {
     }
 
     public boolean full() {
-        return bufferSize() == numElements;
+        return bufferSize() == targetSize;
     }
 
     public boolean isNotLeafNode() {
@@ -75,6 +77,7 @@ public class Node {
         if (leftChild.isEmpty()) {
             while (!rightChild.isEmpty()) {
                 this.buffer.put(rightChild.nextBufferElement());
+                numElements++;
             }
             return;
         }
@@ -82,6 +85,7 @@ public class Node {
         if (rightChild.isEmpty()) {
             while (!leftChild.isEmpty()) {
                 this.buffer.put(leftChild.nextBufferElement());
+                numElements++;
             }
             return;
         }
@@ -92,6 +96,7 @@ public class Node {
         int newElement = nextLeftElement > nextRightElement ? rightChild.nextBufferElement() : leftChild.nextBufferElement();
 
         this.buffer.put(newElement);
+        numElements++;
     }
 
 }

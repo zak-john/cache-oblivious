@@ -5,10 +5,15 @@ import java.util.Arrays;
 public class BufferImpl implements Buffer {
 
     public static Buffer EMPTY_INSTANCE = new BufferImpl(0);
+    private static final int DEFAULT_SIZE = 50;
 
     private int[] data;
     private int nextIndex;
     private int inputIndex;
+
+    public BufferImpl() {
+        this(DEFAULT_SIZE);
+    }
 
     public BufferImpl(int size) {
         this.nextIndex = 0;
@@ -34,7 +39,7 @@ public class BufferImpl implements Buffer {
 
     @Override
     public void sort() {
-        Arrays.sort(this.data);
+        Arrays.sort(this.data, 0, inputIndex);
     }
 
     @Override
@@ -44,7 +49,7 @@ public class BufferImpl implements Buffer {
 
     @Override
     public int size() {
-        return data.length;
+        return inputIndex;
     }
 
     @Override
@@ -56,5 +61,10 @@ public class BufferImpl implements Buffer {
     public void put(int input) {
         data[inputIndex] = input;
         inputIndex++;
+        if (inputIndex == data.length - 2) {
+            int[] old = data;
+            data = new int[old.length * 2];
+            System.arraycopy(old, 0, data, 0, old.length);
+        }
     }
 }
