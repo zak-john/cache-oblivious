@@ -15,7 +15,7 @@ public class KTreeImpl implements KTree {
         this.init(buffers);
     }
 
-    private static void mergeSortBuffers(Buffer[] buffers) {
+    private static void sortBuffers(Buffer[] buffers) {
         for (Buffer buffer : buffers) {
             buffer.sort();
         }
@@ -29,8 +29,8 @@ public class KTreeImpl implements KTree {
         }
         int bufferIndex = 0;
         for (int i = 0; i < n; i++) {
-            boolean finalBuffer = bufferIndex == k - 1; // we don't want to go beyond the final buffer
-            boolean bufferAtCapacity = (i + 1) % targetBufferSize == 0; // we've hit the optimal size for each buffer
+            boolean finalBuffer = bufferIndex == k - 1;
+            boolean bufferAtCapacity = (i + 1) % targetBufferSize == 0;
             Buffer buffer = output[bufferIndex];
             buffer.put(input[i]);
             if (bufferAtCapacity && !finalBuffer) {
@@ -93,6 +93,7 @@ public class KTreeImpl implements KTree {
     public int[] sort() {
         head.fill();
         int[] headArray = head.buffer().array();
+        // have to find a way around this
         return Arrays.copyOfRange(headArray, 0, input.length);
     }
 
@@ -100,7 +101,7 @@ public class KTreeImpl implements KTree {
         int N = input.length;
         int k = (int) Math.pow(N, 1.00/3);
         Buffer[] buffers = divideInput(input, N, k);
-        mergeSortBuffers(buffers);
+        sortBuffers(buffers);
         return buffers;
     }
 }
