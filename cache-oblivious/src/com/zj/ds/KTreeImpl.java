@@ -2,7 +2,6 @@ package com.zj.ds;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.util.Arrays;
 
 public class KTreeImpl implements KTree {
     private final int[] input;
@@ -23,9 +22,15 @@ public class KTreeImpl implements KTree {
 
     private static Buffer[] divideInput(int[] input, int n, int k) {
         int targetBufferSize = n / k;
+        int delta = n - (n * targetBufferSize);
+        int finalBufferSize = targetBufferSize + delta;
         Buffer[] output = new Buffer[k];
         for (int i = 0; i < output.length; i++) {
-            output[i] = new BufferImpl(targetBufferSize);
+            if (i == output.length - 1) {
+                output[i] = new BufferImpl(finalBufferSize);
+            } else {
+                output[i] = new BufferImpl(targetBufferSize);
+            }
         }
         int bufferIndex = 0;
         for (int i = 0; i < n; i++) {
@@ -92,9 +97,7 @@ public class KTreeImpl implements KTree {
     @Override
     public int[] sort() {
         head.fill();
-        int[] headArray = head.buffer().array();
-        // have to find a way around this
-        return Arrays.copyOfRange(headArray, 0, input.length);
+        return head.buffer().array();
     }
 
     private Buffer[] createInitialBuffers(int[] input) {

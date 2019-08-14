@@ -61,10 +61,5 @@ public class BufferImpl implements Buffer {
     public void put(int input) {
         data[inputIndex] = input;
         inputIndex++;
-        if (inputIndex == data.length - 2) {
-            int[] old = data;
-            data = new int[old.length * 2];
-            System.arraycopy(old, 0, data, 0, old.length);
-        }
     }
 }
